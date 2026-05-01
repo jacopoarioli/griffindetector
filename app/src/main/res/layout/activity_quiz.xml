@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF3F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST DI PERSONALITÀ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="#093D56" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Cosa fai nel weekend?" android:textStyle="bold" android:layout_marginTop="10dp"/>
+        <RadioGroup android:id="@+id/q1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bevo birra con gli amici" />
+            <RadioButton android:id="@+id/q1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pianifico la conquista del mondo" />
+            <RadioButton android:id="@+id/q1_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cerco appuntamenti galanti" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. Il tuo cibo preferito?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ali di pollo fritte" />
+            <RadioButton android:id="@+id/q2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cibo gourmet o latte" />
+            <RadioButton android:id="@+id/q2_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Qualcosa di afrodisiaco" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. Come ti descriveresti?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Un po' tonto ma simpatico" />
+            <RadioButton android:id="@+id/q3_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Un genio incompreso" />
+            <RadioButton android:id="@+id/q3_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Un seduttore instancabile" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. Se trovi un'arma laser cosa fai?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="La rompo subito" />
+            <RadioButton android:id="@+id/q4_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="La uso per eliminare i nemici" />
+            <RadioButton android:id="@+id/q4_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cerco di impressionare le donne" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. Come reagisci agli insulti?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Non capisco che mi stanno insultando" />
+            <RadioButton android:id="@+id/q5_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rispondo con sarcasmo e cattiveria" />
+            <RadioButton android:id="@+id/q5_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Faccio un occhiolino e me ne vado" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. Cosa ne pensi della tua famiglia?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q6" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q6_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Li amo, credo..." />
+            <RadioButton android:id="@+id/q6_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Li odio tutti, specialmente mia madre" />
+            <RadioButton android:id="@+id/q6_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Spero abbiano amiche carine" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7. Qual è il tuo animale preferito?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q7" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q7_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Un cane parlante bevitore" />
+            <RadioButton android:id="@+id/q7_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Una scimmia cattiva nell'armadio" />
+            <RadioButton android:id="@+id/q7_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatti (le donne li amano)" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8. Come ti senti a scuola/lavoro?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q8" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q8_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dormo tutto il tempo" />
+            <RadioButton android:id="@+id/q8_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sono circondato da idioti" />
+            <RadioButton android:id="@+id/q8_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cerco solo di rimorchiare" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9. Cosa vorresti fare da grande?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q9" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q9_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Il re degli stupidi" />
+            <RadioButton android:id="@+id/q9_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dittatore supremo" />
+            <RadioButton android:id="@+id/q9_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Star del cinema per adulti" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10. Qual è il tuo motto?" android:textStyle="bold" android:layout_marginTop="15dp"/>
+        <RadioGroup android:id="@+id/q10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q10_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eheheheheh!" />
+            <RadioButton android:id="@+id/q10_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="La vittoria sarà mia!" />
+            <RadioButton android:id="@+id/q10_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giggity Giggity!" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_scopri"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SCOPRI CHI SEI"
+            android:backgroundTint="#7FBCD7"
+            android:textColor="#231C1C"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+</ScrollView>
