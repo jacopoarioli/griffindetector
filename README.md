@@ -33,9 +33,9 @@ Dopo aver completato il quiz, l'app controlla le risposte e decide il risultato.
 
 Per creare l'app sono stati usati:
 
-- Java oppure Kotlin
-- Android Studio
-- XML per creare le schermate
+- IDE: Android Studio
+- Linguaggio di programmazione: Kotlin
+- Grafica: XML
 
 ## Conclusione
 
