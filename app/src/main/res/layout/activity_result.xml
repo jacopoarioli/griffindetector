@@ -14,22 +14,29 @@
         android:textSize="22sp"
         android:textColor="#093D56" />
 
+    <ImageView
+        android:id="@+id/result_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside" />
+
     <TextView
         android:id="@+id/result_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PETER"
-        android:textSize="50sp"
+        android:text="NOME"
+        android:textSize="45sp"
         android:textStyle="bold"
         android:textColor="#093D56"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
 
     <Button
         android:id="@+id/btn_retry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RIFAI IL TEST"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#7FBCD7"
         android:textColor="#231C1C" />
 

@@ -3,6 +3,7 @@ package com.example.griffindetector
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -11,12 +12,27 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val result = intent.getStringExtra("PERSONAGGIO") ?: "PETER"
-        findViewById<TextView>(R.id.result_name).text = result
+        val resultName = findViewById<TextView>(R.id.result_name)
+        val resultImage = findViewById<ImageView>(R.id.result_image)
+        val btnRetry = findViewById<Button>(R.id.btn_retry)
 
-        findViewById<Button>(R.id.btn_retry).setOnClickListener {
+        // Recuperiamo il nome del personaggio inviato dalla QuizActivity
+        val result = intent.getStringExtra("PERSONAGGIO") ?: "PETER"
+
+        resultName.text = result
+
+        // Logica per impostare l'immagine giusta
+        // Assicurati che i nomi dei file in 'drawable' siano uguali a quelli qui sotto
+        when (result) {
+            "PETER" -> resultImage.setImageResource(R.drawable.peter)
+            "STEWIE" -> resultImage.setImageResource(R.drawable.stewie)
+            "QUAGMIRE" -> resultImage.setImageResource(R.drawable.quagmire)
+            else -> resultImage.setImageResource(R.drawable.peter)
+        }
+
+        btnRetry.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP // Pulisce la cronologia
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
         }
     }
