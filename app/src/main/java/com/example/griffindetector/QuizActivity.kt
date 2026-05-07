@@ -13,7 +13,6 @@ class QuizActivity : AppCompatActivity() {
         setContentView(R.layout.activity_quiz)
 
         findViewById<Button>(R.id.btn_scopri).setOnClickListener {
-            // Lista di tutti i RadioGroup
             val groups = listOf(
                 R.id.q1, R.id.q2, R.id.q3, R.id.q4, R.id.q5,
                 R.id.q6, R.id.q7, R.id.q8, R.id.q9, R.id.q10
@@ -29,13 +28,9 @@ class QuizActivity : AppCompatActivity() {
                     rispostoATutto = false
                     break
                 }
-                // Logica semplificata basata sull'ordine delle risposte
                 when (findViewById<Button>(selected).text.toString()) {
-                    // Questa è una logica dimostrativa basata sui caratteri
-                    // In un'app reale useresti ID specifici
                 }
 
-                // Usiamo una logica di posizione per semplicità di calcolo
                 val index = group.indexOfChild(findViewById(selected))
                 when(index) {
                     0 -> pPeter++
@@ -51,7 +46,6 @@ class QuizActivity : AppCompatActivity() {
                 else if (pStewie >= pPeter && pStewie >= pQuagmire) "STEWIE"
                 else "QUAGMIRE"
 
-                // Aggiungiamo gli altri se vuoi variabilità (Meg, Chris, Herbert casuali per ora o basati su logica)
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra("PERSONAGGIO", vincitore)
                 startActivity(intent)

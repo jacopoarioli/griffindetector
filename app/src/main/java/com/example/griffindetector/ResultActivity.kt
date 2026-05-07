@@ -16,13 +16,10 @@ class ResultActivity : AppCompatActivity() {
         val resultImage = findViewById<ImageView>(R.id.result_image)
         val btnRetry = findViewById<Button>(R.id.btn_retry)
 
-        // Recuperiamo il nome del personaggio inviato dalla QuizActivity
         val result = intent.getStringExtra("PERSONAGGIO") ?: "PETER"
 
         resultName.text = result
 
-        // Logica per impostare l'immagine giusta
-        // Assicurati che i nomi dei file in 'drawable' siano uguali a quelli qui sotto
         when (result) {
             "PETER" -> resultImage.setImageResource(R.drawable.peter)
             "STEWIE" -> resultImage.setImageResource(R.drawable.stewie)
