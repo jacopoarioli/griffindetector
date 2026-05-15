@@ -1,5 +1,4 @@
-﻿```markdown
-# Griffin Detector
+﻿# Griffin Detector
 
 ## Introduzione
 
@@ -40,4 +39,3 @@ Per creare l'app sono stati usati:
 ## Conclusione
 
 Griffin Detector è un'app facile da usare che dimostra come creare un quiz su Android con una struttura semplice e chiara.
-```
